@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "./",
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.js$|\\.cjs$|\\.jsx$|\\.tsx$|\\.ts$|\\.css$|\\.code-workspace$",
+          "cmd": "npx eslint --fix ${file}",
+        },
+        {
+          "match": "\\.js$|\\.cjs$|\\.jsx$|\\.tsx$|\\.ts$|\\.json$|\\.css$|\\.code-workspace$|\\.scss$|\\.code-workspace$",
+          "cmd": "npx prettier --write ${file}",
+        },
+      ],
+    },
+    "editor.renderWhitespace": "all",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "tailwindCSS.experimental.classRegex": [
+      ["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+      ["cx\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+      ["cn\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ],
+    "cSpell.words": ["ddgs"],
+  },
+  "extensions": {
+    "recommendations": [
+      "emeraldwalk.runonsave",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+    ],
+  },
+}
