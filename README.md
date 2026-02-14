@@ -211,11 +211,10 @@ BERTは構文骨格を先に構築してから意味を埋める（Ford et al. 2
 seed-lm-experiments/
 ├── README.md
 ├── experiments/
-│   ├── bert_confidence/       # Experiment 1: BERT 確信度分析
-│   ├── llada_unmasking/       # Experiment 2: LLaDA アンマスク可視化
-│   └── prompt_growth/         # Experiment 3: プロンプトによる成長型生成
+│   ├── 01_bert_confidence/    # Experiment 1: BERT 確信度分析
+│   ├── 02_llada_unmasking/    # Experiment 2: LLaDA アンマスク可視化
+│   └── 03_prompt_growth/      # Experiment 3: プロンプトによる成長型生成
 ├── data/                      # 実験データ・結果
-├── notebooks/                 # Jupyter notebooks
 └── docs/                      # 追加ドキュメント
     └── related_work.md
 ```
