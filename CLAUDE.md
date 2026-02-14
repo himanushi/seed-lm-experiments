@@ -32,11 +32,10 @@ SeedLM: 意味的重要度に基づく階層的テキスト成長型生成の実
 ```
 seed-lm-experiments/
 ├── experiments/
-│   ├── bert_confidence/       # BERT 確信度分析
-│   ├── llada_unmasking/       # LLaDA アンマスク可視化
-│   └── prompt_growth/         # プロンプトによる成長型生成
+│   ├── 01_bert_confidence/    # BERT 確信度分析
+│   ├── 02_llada_unmasking/    # LLaDA アンマスク可視化
+│   └── 03_prompt_growth/      # プロンプトによる成長型生成
 ├── data/                      # 実験データ・結果
-├── notebooks/                 # Jupyter notebooks
 └── docs/                      # 追加ドキュメント
 ```
 
